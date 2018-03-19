@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 0fdfb7c1add8e7a419ed15189c9404ae
+timeCreated: 1507466387
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature_001
+    100002: Body
+    100004: Bone
+    100006: //RootNode
+    100008: chest
+    100010: Face
+    100012: fingers_l
+    100014: fingers_r
+    100016: foot_l
+    100018: foot_r
+    100020: head
+    100022: hip_l
+    100024: hip_r
+    100026: legIK_l
+    100028: legIK_r
+    100030: lowerarm_l
+    100032: lowerarm_l_001
+    100034: lowerarm_r
+    100036: lowerarm_r_001
+    100038: lowerleg_l
+    100040: lowerleg_r
+    100042: neck
+    100044: palm_l
+    100046: palm_r
+    100048: pelvis
+    100050: shoulder_l
+    100052: shoulder_r
+    100054: toes_l
+    100056: toes_r
+    100058: upperarm_l
+    100060: upperarm_r
+    100062: upperleg_l
+    100064: upperleg_r
+    400000: Armature_001
+    400002: Body
+    400004: Bone
+    400006: //RootNode
+    400008: chest
+    400010: Face
+    400012: fingers_l
+    400014: fingers_r
+    400016: foot_l
+    400018: foot_r
+    400020: head
+    400022: hip_l
+    400024: hip_r
+    400026: legIK_l
+    400028: legIK_r
+    400030: lowerarm_l
+    400032: lowerarm_l_001
+    400034: lowerarm_r
+    400036: lowerarm_r_001
+    400038: lowerleg_l
+    400040: lowerleg_r
+    400042: neck
+    400044: palm_l
+    400046: palm_r
+    400048: pelvis
+    400050: shoulder_l
+    400052: shoulder_r
+    400054: toes_l
+    400056: toes_r
+    400058: upperarm_l
+    400060: upperarm_r
+    400062: upperleg_l
+    400064: upperleg_r
+    2100000: Face__c2face_png
+    2100002: Body__Untitled_png
+    2100004: Body__c2uvlayout1_png
+    4300000: Face
+    4300002: Body
+    7400000: walking
+    7400002: idle
+    7400004: death
+    9500000: //RootNode
+    13700000: Body
+    13700002: Face
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body__Untitled_png
+    second: {fileID: 2100002, guid: 0fdfb7c1add8e7a419ed15189c9404ae, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body__c2uvlayout1_png
+    second: {fileID: 2100004, guid: 0fdfb7c1add8e7a419ed15189c9404ae, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Face__c2face_png
+    second: {fileID: 2100000, guid: 0fdfb7c1add8e7a419ed15189c9404ae, type: 3}
+  materials:
+    importMaterials: 1
+    autoMapExternalMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walking
+      takeName: Default Take
+      firstFrame: 80
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: Armature_001Action
+      firstFrame: 160
+      lastFrame: 640
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: death
+      takeName: Armature_001Action
+      firstFrame: 641
+      lastFrame: 754
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
