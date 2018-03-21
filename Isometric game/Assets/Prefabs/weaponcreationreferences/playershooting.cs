@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using EZCameraShake;
 public class playershooting : MonoBehaviour {
 
 	[Header("shoot speed, lower for faster shooting")]
@@ -27,9 +27,15 @@ public class playershooting : MonoBehaviour {
 	public GameObject muzzleflash;
 	[Header("count of ammo that is currently in the weapon")]
 	public int ammo;
+    [Header("A transform component that helps the gun sit nicely on the character")]
     public Transform customtransform;
+    [Header("CameraShake Paramaters (float)")]
+    public float Magnitude;
+        public float Roughness;
+        public float FadeInTime;
+        public float FadeOutTime;
     //a reference to the script of the pickup gameobject so we can tell the pickup our hands 
-	private gunmanagement gunmanager;
+    private gunmanagement gunmanager;
 	private string whichgun;
 	private ParticleSystem muzzleparticle;
     private bool throwtimerenabler;
@@ -114,7 +120,7 @@ public class playershooting : MonoBehaviour {
                 ammo -= 1;
                 shootingintervaltimer = 0f;
                 muzzleparticle.Play();
-
+                CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, FadeInTime, FadeOutTime);
             }
             //the same thing for the right hand 
             else if (Input.GetButtonDown("Fire2") && transform.parent.tag == "rightgun" && shootinterval < shootingintervaltimer && ammo > 0)
@@ -127,6 +133,7 @@ public class playershooting : MonoBehaviour {
                 ammo = ammo - 1;
                 shootingintervaltimer = 0f;
                 muzzleparticle.Play();
+                CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, FadeInTime, FadeOutTime);
             }
         }
         else if (autofire == true )
@@ -142,6 +149,7 @@ public class playershooting : MonoBehaviour {
                 ammo -= 1;
                 shootingintervaltimer = 0f;
                 muzzleparticle.Play();
+                CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, FadeInTime, FadeOutTime);
             }
             //the same thing for the right hand 
             else if (Input.GetButton("Fire2") && transform.parent.tag == "rightgun" && shootinterval < shootingintervaltimer && ammo > 0)
@@ -154,6 +162,7 @@ public class playershooting : MonoBehaviour {
                 ammo = ammo - 1;
                 shootingintervaltimer = 0f;
                 muzzleparticle.Play();
+                CameraShaker.Instance.ShakeOnce(Magnitude, Roughness, FadeInTime, FadeOutTime);
             }
         }
 
